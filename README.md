@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# PicSpot
+
+A Spot to upload, view and download images built with React js + Appwrite.
+This demo project utilizes the Appwrite's storage API endpoint to provide all the functionalities.
+
+<img src="https://user-images.githubusercontent.com/77877486/154823921-eefb8be7-8c4d-4a95-bb11-ba0b72dad896.png">
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
