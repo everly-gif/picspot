@@ -21,7 +21,7 @@ const Display = () => {
     <div className='card-cont'>
     {files && files.map((file)=>{
     return(
-      <Card key={file.$id} id={file.$id}name={file.name} mimetype={file.mimeType} size={file.sizeOriginal}/>
+      <Card key={file.$id} id={file.$id}name={file.name} mimetype={file.mimeType} size={file.sizeOriginal} displayFiles={displayPictures}/>
     );
     })}
     </div>

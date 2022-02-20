@@ -21,7 +21,8 @@ const Card = (props) => {
   const deleteFile=(e,id)=>{
     let promise = sdk.storage.deleteFile(id);
     promise.then(function (response) {
-        console.log(response); // Success
+        console.log(response); 
+        props.displayFiles();// Success
     }, function (error) {
         console.log(error); // Failure
     });
@@ -37,7 +38,7 @@ const Card = (props) => {
         <div className='card-buttons'>
         <a target="_blank" href={viewFile(props.id)}>View</a>
         <button onClick={(e)=>downloadFile(e,props.id)}>Download</button>
-        <button onClick={(e)=>deleteFile(e,props.id)}>Delete</button>
+        <button onClick={(e)=>deleteFile(e,props.id,props.displayFiles)}>Delete</button>
         </div>
     </div>
   )

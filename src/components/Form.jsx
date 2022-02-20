@@ -21,6 +21,7 @@ const Form = () => {
      promise.then(()=>{
          console.log("Created File Successfully");
          inputRef.current.value = '';
+         window.location.reload(); // for the time being
      },(error)=>{
          console.log(error);
      })
