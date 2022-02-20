@@ -1,10 +1,12 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  margin-bottom: 200px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +37,85 @@
   to {
     transform: rotate(360deg);
   }
+}
+.navbar{
+  height:80px;
+  background-color: #084594;
+  color:white;
+  padding:20px;
+  
+}
+.form{
+  padding: 20px;
+  background-color:#084594;
+  text-align: center;
+  position: fixed;
+  width:100%;
+  bottom :0;
+  color:white;
+}
+.file-flex{
+  text-align: center;
+  margin-left:8%;
+}
+.form h3{
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+.card{
+  box-shadow: 5px 5px 9px 9px #ccc;
+  border-radius: 10px;
+  padding:30px;
+  line-height: 2;
+  min-width: 300px;
+}
+.card a{
+  background-color:#FFD32D;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 13px;
+  border-radius: 5px;
+
+}
+.card button:nth-child(2){
+ background-color:#084594;
+ color:white;
+ border:none;
+ padding: 5px 13px;
+ border-radius: 5px;
+}
+.card button:nth-child(3){
+  background-color:red;
+  color:white;
+  border:none;
+  padding: 5px 13px;
+  border-radius: 5px;
+  
+ }
+.card-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.img-cont{
+  text-align: center;
+}
+.card-cont{
+  padding:30px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  gap: 50px;
+}
+.form button{
+  width:50%;
+  margin-top: 20px;
+  background-color:#FFD32D;
+  border-radius: 10px;
+  cursor: pointer;
+  border:none;
+  padding:10px;
 }
